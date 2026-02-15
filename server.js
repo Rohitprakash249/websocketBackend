@@ -30,7 +30,7 @@ io.on("connection", (socket) => {
     console.log("User disconnected:", socket.id);
   });
 });
-
-server.listen(5000, () => {
-  console.log("Server running on port 5000");
+app.get("/", (req, res) => res.send("its working"));
+server.listen(8080, () => {
+  console.log("Server running on port 8080");
 });
