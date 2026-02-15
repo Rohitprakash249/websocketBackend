@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://websocket-frontend-mauve.vercel.app/", // React app URL
+    origin: "https://websocket-backend-blond.vercel.app/", // React app URL
     methods: ["GET", "POST"],
   },
 });
